@@ -3,45 +3,89 @@ Please answer the below core-java Questions:
 What is programing language?
 A.A programming language is a formal language that specifies a set of instructions that can be used to produce various kinds of output
 What jdk contains or composed of and define each components?
+A.JDK is a superset of JRE, and contains everything that is in JRE, plus tools such as the compilers and debuggers necessary for developing applets and applications. JRE provides the libraries, the Java Virtual Machine (JVM), and other components to run applets and applications written in the Java programming language.
 What is IDE?
+A.An integrated development environment (IDE) is a software suite that consolidates the basic tools developers need to write and test software. Typically, an IDE contains a code editor, a compiler or interpreter and a debugger that the developer accesses through a single graphical user interface (GUI).
 What are the IDEs available in the market to support java?
+A.Intellij , NetBeans , Condenvy, Eclipse.
 Explain the entire java life cycle.
+A.Editing the program
+  Compiling the source code
+  Executing the byte code
 what is class?
+A.A class, in the context of Java, are templates that are used to create objects, and to define object data types and methods.
 What is object?
+A.object is an instance of a class.
 What is the entry point of an application?
+A.The main method is the entry point of a Java application.
 Why main is static?
+A.This is neccesary because main() is called by the JVM before any objects are made. Since it is static it can be directly invoked via the class
 Which class is the superclass of all classes?
+A.java.lang.object is a superclass of all class.
 What is difference between path and classpath variables?
+A.The main difference between PATH and CLASSPATH is that PATH is an environment variable which is used to locate JDK binaries like "java" or "javac" command used to run java program and compile java source file.
 What is the difference between an Interface and Abstract class?
+A.Difference between Abstract Class and Interface in Java. ... Abstract class can have abstract and non-abstract methods.
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A.You cannot create an object of abstract class or interface since they are incomplete class (interface is not even considered as a class.) ... Main intention of creating an object is to utilize the wrapped methods and data. As interface don't have any concrete implementation hence we cannot
 what is Access Specifier?
+A.Access specifiers are keywords in object-oriented languages that set the accessibility of classes, methods, and other members
 What is OOP ? Define each feature of java OOP.
+A.
 What is Java Package and which package is imported by default?
+A.A package as the name suggests is a pack(group) of classes, interfaces and other packages,java.lang package is imported by default.
 What is API? Name list of API that you have used so far.
+A. API stands for Application Programming Interface.
+
 Does java support multiple inheritance, explain why or why not?
+A.In java this can never occur as there is no multiple inheritance. Here even if two interfaces are going to have same method, the implementing class will have only one method and that too will be done by the implementer. Dynamic loading of classes makes the implementation of multiple inheritance difficult.
 What is method overloading and when it happens?
+A.Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different
 Explain exceptions in java and how to handle it.
+A.Java - Exceptions. An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled.
 What is static keyword in java? How it has been used in variables and methods ?
+A.In Java, a static member is a member of a class that isn't associated with an instance of a class. Instead, the member belongs to the class itself.
 What is final and how it has been used variables and methods?
+A.final keyword in java. final keyword is used in different contexts. First of all, final is a non-access modifier applicable only to a variable, a method or a class.Following are different contexts where final is used. When a variable is declared with final keyword, its value can't be modified, essentially, a constant.
 What is final, finally and finalize?
+A.Final class can't be inherited, final method can't be overridden and final variable value can't be changed. Finally is used to place important code, it will be executed whether exception is handled or not. Finalize is used to perform clean up processing just before object is garbage collected.
 What is a constructor ?
+A.A constructor in Java is a block of code similar to a method that's called when an instance of an object is created
 Can we have multiple constructors in a class?
+A.A class can have multiple constructors, as long as their signature (the parameters they take) are not the same. You can define as many constructors as you need.
 If we don't have a constructor declared, what is called during the object creation?
+A.
 What is "this" keyword in java ?
+A.Keyword THIS is a reference variable in Java that refers to the current object.
 What is "super" keyword in java? How many possible way can you use?
+A.super is a keyword. It is used inside a sub-class method definition to call a method defined in the super class. Only public and protected methods can be called by the super keyword.
 What is JVM stand for ?
+A.A Java virtual machine (JVM) is a virtual machine that enables a computer to run Java programs as well as programs written in other languages and compiled to Java bytecode.
 Is JVM platform independent?
+A.The JVM must be platform dependent to allow your Java to run on the specific platform. A JVM for Windows will translate your Java into different system calls than a JVM for OS X.
 What version of java are you using?
+A.10.0.2
 What is JAR stand for ?
+A.JAR stands for "Java ARchive". A JAR file is basically a zip-file which contains a couple of class files and a text file containing some meta information
 What is the difference between JDK and JVM?
+A.JVM is Java Virtual Machine -- the JVM actually runs Java bytecode. JDK is Java Developer Kit -- the JDK is what you need to compile Java source code. JRE is Java Runtime Environmen
 What is the difference between JVM and JRE?
+A.JDK is a superset of JRE, and contains everything that is in JRE, plus tools such as the compilers and debuggers necessary for developing applets and applications. JRE provides the libraries, the Java Virtual Machine (JVM), and other components to run applets and applications written in the Java programming language.
 What is compile time and run time?
+A.The source code must be compiled into machine code in order to become and executable program. This compilation process is referred to as compile time. A compiled program can be opened and run by a user. ... The terms "runtime" and "compile time" are often used by programmers to refer to different types of errors.
 What is heap?
+A. The heap is the runtime data area from which memory for all class instances and arrays is allocated.
 How java manage it's memory?
+Java Memory Management, with its built-in garbage collection, is one of the language's finest achievements. It allows developers to create new objects without worrying explicitly about memory allocation and deallocation, because the garbage collector automatically reclaims memory for reuse.
+
 What is the difference between String, StringBuffer and StringBuilder?
+A.String is immutable, if you try to alter their values, another object gets created, whereas StringBuffer and StringBuilder are mutable so they can change their values. Thread-Safety Difference: The difference between StringBuffer and StringBuilder is that StringBuffer is thread-safe.
 What is Singleton class?
-What is Serialization and Deserialization?
+A.Singleton Class in Java. In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time
+Serialization and Deserialization in Java.
+A.Serialization is a process of converting an object into a sequence of bytes which can be persisted to a disk or database or can be sent through streams. The reverse process of creating object from sequence of bytes is called deserialization.
 when to use transient variable in java?
+A.
 Difference between while and do..while loop?
 What is Enum?
 What is Iterator?
